@@ -23,7 +23,7 @@ public class RunXLuaBySelfDefLoader : MonoBehaviour
     /// <summary>
     /// 定义回调方法
     /// 功能：
-    ///     被方法主要功能是自定义lua文件路径
+    ///     方法主要功能是自定义lua文件路径
     /// </summary>
     /// <param name="filepath"></param>
     /// <returns></returns>

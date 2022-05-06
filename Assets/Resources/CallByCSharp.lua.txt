@@ -25,8 +25,37 @@ gameUser={
     
     Kill=function(this, name)
         print(this.name.." 杀害了 "..name)
+    end,
+
+    Add=function(this, a, b)
+        return a + b
     end
 }
 
 --定义一个更简单表
 cardList={"13","5","7","10","4","1","3"}
+
+--定义单独的lua函数
+function ProcMyFunc1()
+    print("procMyFun1 无参函数")
+end
+
+function ProcMyFunc2(num1, num2)
+    print("procMyFun2 两个参数 num1+num2="..num1+num2)
+end
+
+function ProcMyFunc3(num1, num2)
+    print("procMyFun3 带返回值的函数")
+    return num1+num2
+end
+
+function ProcMyFunc4(num1, num2, num3)
+    print("procMyFun4 三个参数 num1+num2+num3="..num1+num2+num3)
+end
+
+--定义具有多个返回值的函数
+function ProcMyFunc5(num1, num2)
+    local result=num1+num2
+    print("procMyFun5 具备多个返回值")
+    return num1,num2,result
+end

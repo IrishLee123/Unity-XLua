@@ -34,6 +34,7 @@ public class CallLuaTableByInterface : MonoBehaviour
         _env.Dispose();
     }
 
+    //需要添加标签
     [CSharpCallLua]
     public interface IWeaponTable
     {
