@@ -1,0 +1,32 @@
+--测试CSharp调用Lua
+--定义全局变量
+str="全局变量"
+number=10
+local num=20
+floNumber=88.8
+IsFirstTime=true
+
+--定义一个简单表
+weaponTable={weapon1="ak47",weapon2="m416",weapon3="98k",weapon4="m24"}
+
+--定义一个复杂表
+gameUser={
+    name="法外狂徒张三",
+    age=28,
+    ID="232322333",
+    
+    Speak=function()
+        print("张三正在讲话")
+    end,
+    
+    Walking=function()
+        print("张三正在走路")
+    end,
+    
+    Kill=function(this, name)
+        print(this.name.." 杀害了 "..name)
+    end
+}
+
+--定义一个更简单表
+cardList={"13","5","7","10","4","1","3"}
