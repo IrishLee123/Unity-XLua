@@ -1,0 +1,14 @@
+--演示 Lua Call C# 的各种特性
+--
+print("测试Lua文件是否正常加载")
+
+--[[ Lua 访问 Unity 系统 API ]]--
+--1: Lua中实例化一个一个Unity对象
+local newObj = CS.UnityEngine.GameObject()
+newObj.name="New GameObject"
+
+--2: 查找游戏物体
+
+
+
+--[[ Lua 访问 C# 自定义接口 ]]--
