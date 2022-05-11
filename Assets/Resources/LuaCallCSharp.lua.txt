@@ -8,7 +8,7 @@ local newObj = CS.UnityEngine.GameObject()
 newObj.name="New GameObject"
 
 --2: 查找游戏物体
-
+CS.UnityEngine.GameObject.Find();
 
 
 --[[ Lua 访问 C# 自定义接口 ]]--
